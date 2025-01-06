@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        .link {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid gray;
+            padding: 40px;
+        }
+
+        .link a {
+            color: brown;
+            font-size: xx-large;
+            text-decoration: none;
+
+        }
+
+        h1 {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="success">
+        <h3>
+            <%= successMsg %>
+        </h3>
+        <h3>
+            <%= errorMsg %>
+        </h3>
+
+    </div>
+    <div class="link">
+        <h1>Welcome to the Home Page</h1>
+        <a href="/signup">signup</a>
+        <a href="/login">login</a>
+        <a href="/logout">Logout</a>
+        <a href="/User">User</a>
+    </div>
+</body>
+
+</html>
